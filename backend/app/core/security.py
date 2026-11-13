@@ -2,9 +2,9 @@ from fastapi import HTTPException
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from backend.app.db import models
+from app.db import models
 from typing import Optional
-from backend.app.crud.user import get_user
+from app.crud.user import get_user
 
 SECRET_KEY = "your_secret_key"
 ALGORITHM = "HS256"

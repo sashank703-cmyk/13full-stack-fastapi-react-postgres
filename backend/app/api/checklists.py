@@ -2,13 +2,13 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from sqlalchemy.orm import Session
 from typing import List
 
-from backend.app.schemas.checklist import ChecklistCreate, ChecklistOut
-from backend.app.crud.checklist import (
+from app.schemas.checklist import ChecklistCreate, ChecklistOut
+from app.crud.checklist import (
     create_checklist, get_checklists, get_checklist,
     update_checklist, delete_checklist
 )
-from backend.app.db.models import User
-from backend.app.dependencies.auth import get_current_user, get_db
+from app.db.models import User
+from app.dependencies.auth import get_current_user, get_db
 
 router = APIRouter()
 

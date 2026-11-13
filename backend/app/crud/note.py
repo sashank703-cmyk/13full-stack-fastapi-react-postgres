@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from backend.app.db.models import Note
-from backend.app.schemas.note import NoteUpdate
+from app.db.models import Note
+from app.schemas.note import NoteUpdate
 from datetime import datetime
 
 def get_notes(db: Session, user_id: int):

@@ -2,12 +2,12 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 
-from backend.app.crud.note import (
+from app.crud.note import (
     create_note, get_notes, get_note, update_note, delete_note
 )
-from backend.app.schemas.note import NoteCreate, NoteUpdate, NoteOut
-from backend.app.dependencies.auth import get_current_user, get_db
-from backend.app.db.models import User
+from app.schemas.note import NoteCreate, NoteUpdate, NoteOut
+from app.dependencies.auth import get_current_user, get_db
+from app.db.models import User
 
 router = APIRouter()
 

@@ -1,6 +1,6 @@
 from sqlalchemy.exc import SQLAlchemyError
-from backend.app.db.models import User, Base
-from backend.app.db.database import engine, SessionLocal
+from app.db.models import User, Base
+from app.db.database import engine, SessionLocal
 
 def create_tables():
     print("Creating tables...")

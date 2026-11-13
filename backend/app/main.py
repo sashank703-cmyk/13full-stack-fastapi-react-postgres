@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.app.api import auth, notes, checklists, common
+from app.api import auth, notes, checklists, common
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
-from backend.app.db.models import Checklist
+from app.db.models import Checklist
 from typing import Optional
-from backend.app.schemas.checklist import ChecklistCreate 
+from app.schemas.checklist import ChecklistCreate 
 from datetime import datetime
 
 def create_checklist(db: Session, checklist, user_id: int):
